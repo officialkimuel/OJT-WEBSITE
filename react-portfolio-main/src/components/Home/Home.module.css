@@ -1,0 +1,13 @@
+@import "../../vars.css";
+
+.container {
+  color: var(--color-text);
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.imageDescription {
+  margin-top: 8px;
+  font-size: 30px;
+  color: var(--color-text); /* Adjust if necessary to fit your theme */
+}

@@ -21,7 +21,7 @@ export const School = () => {
             src={getImageUrl("school/ccs.png")}
             alt="College of Computer Studies"
             className={styles.image}
-            style={{ width: '310px', height: 'auto' }}
+            style={{ width: '312px', height: 'auto' }}
           />
           <p className={styles.imageDescription} style={{ marginTop: '10px', marginBottom: '10px' }}>College of Computing Studies</p>
           <p style={{ textAlign: 'center',fontSize:'20px' }}>Established in 1992, the College of Computing Studies Department at Saint Columban College became a standout department in the 1990s. Offering degrees such as BSIT, BSCS, BLIS, and BSIS, it catered to the burgeoning need for tech professionals. Known for blending theory with practical skills, the department prepared students for the fast-evolving tech industry. Its reputation for excellence in computing and information technology education remains a cornerstone of Saint Columban College.</p>
