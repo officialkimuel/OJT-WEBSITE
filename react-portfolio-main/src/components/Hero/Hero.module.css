@@ -34,7 +34,7 @@
 }
 
 .description {
-  font-size: 19px;
+  font-size: 18px;
   font-family: var(--font-roboto);
   margin-bottom: 22px;
 }
@@ -53,7 +53,6 @@
 .heroImg {
   width: 50%;
   z-index: 1;
-
   animation-name: floating;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -72,32 +71,25 @@
   }
 }
 
-.topBlur {
+.topBlur, .bottomBlur {
   position: absolute;
   width: 50vw;
   height: 50vw;
   min-width: 350px;
-  min-width: 350px;
-  top: -128px;
-  left: -10vw;
   border-radius: 764px;
   background: rgba(25, 55, 109, 0.7);
   filter: blur(150px);
   z-index: 0;
 }
 
+.topBlur {
+  top: -128px;
+  left: -10vw;
+}
+
 .bottomBlur {
-  position: absolute;
-  width: 50vw;
-  height: 50vw;
-  min-width: 350px;
-  min-width: 250px;
   top: 246px;
   right: -25vw;
-  border-radius: 764px;
-  background: rgba(25, 55, 109, 0.7);
-  filter: blur(150px);
-  z-index: 0;
 }
 
 @media screen and (max-width: 830px) {
@@ -108,4 +100,24 @@
   .content {
     align-items: center;
   }
+}
+
+/* Glowing text styles */
+.glowCollege, .glowDeveloper, .glowStudio {
+  text-shadow: 0 0 2px #FFF, /* white glow */
+               0 0 2px #FFF, /* white glow */
+               0 0 2px #FFF, /* white glow */
+               0 0 5px #6848be; /* color glow */
+}
+
+.glowCollege {
+  color: #2dff5a; /* specific color for Saint Columban College */
+}
+
+.glowDeveloper {
+  color: #4DA8DA; /* specific color for Front-End Developer */
+}
+
+.glowStudio {
+  color: #eeff00; /* specific color for Studio Pinya */
 }

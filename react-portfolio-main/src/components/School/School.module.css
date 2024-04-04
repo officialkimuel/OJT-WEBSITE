@@ -6,7 +6,6 @@
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 100px;
-
 }
 
 .title {
@@ -17,41 +16,40 @@
   text-transform: uppercase;
 }
 
-.imagesContainer {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  margin-top: 14px;
-}
-
-.imageItem {
-  text-align: center;
-  margin: 10px;
+/* Bounce down animation keyframes */
+@keyframes bounceDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-500px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  80% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .image {
-  width: auto; /* Adjust based on the size of scc.png if known, or choose a fitting size */
-  height: auto; /* Maintains the aspect ratio. Could be set to a fixed height if preferred */
-  max-width: 100%; /* Ensures the image does not exceed its container's width */
+  width: auto;
+  height: auto;
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+  animation: bounceDown 1s; /* Applying bounce down animation */
 }
 
 .imageDescription {
-  margin-top: 8px;
   font-size: 30px;
-  color: var(--color-text); /* Assuming you want the text color to match the theme */
+  color: var(--color-text);
 }
 
 @media screen and (max-width: 830px) {
-  .imagesContainer {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .imageItem {
-    width: 100%; /* Ensures image items span the full width of the container on smaller screens */
-  }
-  
   .image {
-    max-width: 80%; /* Optionally reduce image size on smaller screens */
+    max-width: 40%; /* Adjusts image size for smaller screens */
   }
 }
